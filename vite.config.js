@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/2D-Portfolio/',
   build: {
     rollupOptions: {
-      input: 'src/index.html', // ⚠️ sans slash au début
+      input: path.resolve(__dirname, 'src/index.html'), // ✅ correction ici
     },
   },
   resolve: {
